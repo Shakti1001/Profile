@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+* { margin:0; padding:0; box-sizing:border-box; }
+body{
+    margin:0px !important;
+    padding:0px !important;
+    box-sizing:border-box;
+}
+.profile_body{
+    padding:0px;
+    margin:0px;
+}
+.profile_head{
+width:100%;
+height:30px;
+padding:0px;
+margin:0px;
+background-color:dodgerblue;
+text-align: right;
+}
+.profile_Image{
+    width:100%;
+    height:650px;
+    padding:0px;
+    margin:0px;
+}
+.profile_image_body{
+    width:100%;
+    height:650px;
+    padding:0px;
+    margin:0px;
+}
+.profile_text{
+  position: absolute;  
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, +50%);
+  font-family: 'Ubuntu', sans-serif;
+  color:#FFFFFF;
+  font-weight: bolder;
+  font-size:30px;
+}
+.profile_text>.p0{
+    font-size:16px;
+}
+.profile_text>.p1{
+    font-size:12px;    
+}
+.p1>a{
+    text-decoration: none;
+    color:#FFFFFF;    
+}
+.p1>a:hover{
+    transform: scale(20px;);
+}
