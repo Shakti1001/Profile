@@ -1,6 +1,8 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">  
     <head>
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+        <meta content="utf-8" http-equiv="encoding">
         <meta name="description" content="Profile of Shakti Kripa Mishra.">    
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="robots" content="noindex, nofollow" />
@@ -9,7 +11,9 @@
         <meta http-equiv="expires" content="0" />
         <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
         <meta http-equiv="pragma" content="no-cache" />
+        <meta name="theme-color" content="#800000">
         <title>Profile :: Shakti</title>
+
         <link rel="stylesheet" type="text/css" href="CSS/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="CSS/bootstrap-reboot.min.css">
         <link rel="stylesheet" type="text/css" href="CSS/bootstrap-grid.min.css">
@@ -17,6 +21,9 @@
         <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     </head>
     <body class="profile_body">
+        <div id="overlay">
+            <div class="spinner-border" role="status" id="loader"></div>            
+       </div>    
         <div class="container pageBody">
             <div class="row">  
                 <div class="col-md-12 navnew">
@@ -156,7 +163,7 @@ Shortly after graduating from <a href="http://bbau.ac.in" title="Babasaheb Bhimr
                     <div class="col-md-12 clearfix fade" style="float:left;padding:50px;">
                         <blockquote style=color:darkslategray>
                             Although I'm not currently looking for any new opportunities but my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!
-                            <br><em style="color:cornflowerblue"><i class="fa fa-envelope"></i>&nbsp;shaktikripamishra[at]gmail[dot]com</em>
+                            <br><em style="color:cornflowerblue"><i class="fa fa-envelope"></i>&nbsp;shaktikripamishra[at]gmail[dot]com</em>                            
                             <br><em style="color:darkslateblue"><i class="fab fa-github"></i>&nbsp;<a href="https://github.com/Shakti1001" title="GitHub Profile Shakti" style="text-decoration: none;">GitHub</a></em>
                             <br><em style="color:orange"><i class="fab fa-stack-overflow"></i>&nbsp;<a href="https://stackoverflow.com/users/9278823/shakti" title="Stack Overflow Profile Shakti" style="text-decoration: none;">Stack Overflow</a></em>
                             <br><em style="color:green"><i class="fab fa-hackerrank"></i>&nbsp;<a href="https://www.hackerrank.com/shaktikripa" title="Hacker Rank Profile Shakti" style="text-decoration: none;">Hacker Rank</a></em>
@@ -184,7 +191,12 @@ Shortly after graduating from <a href="http://bbau.ac.in" title="Babasaheb Bhimr
 }
         </script>
         <script type="text/javascript">
-        $(document).ready(function(){
+        $(document).ready(function(){   
+            $(function() {
+    $("#overlay").fadeOut(2000, function() {
+        $("#loader").fadeOut(2000);        
+    });
+})      
 	$(window).scroll(function () {
 			if ($(this).scrollTop() > 50) {
 				$('#back-to-top').fadeIn();
